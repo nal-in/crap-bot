@@ -33,6 +33,10 @@ def get_waifu(anime_base_url):
 
 def get_doge(doge_type):
     assert doge_type in ['smirk', 'hindi', 'gun', 'sitting', 'quoge']
+
+    if doge_type == 'help':
+        m = "Available doge commands:\ncrap doge sitting\ncrap doge smirk\ncrap doge hindi\ncrap doge quoge\ncrap doge gun"
+        return m
     
     if doge_type == 'smirk':
         url = os.path.join(cloudinary_base, "v1625167973/doge_smirk.png")
