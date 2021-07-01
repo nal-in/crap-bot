@@ -32,7 +32,7 @@ def get_waifu(anime_base_url):
     return res.json()['url']
 
 def get_doge(doge_type):
-    assert doge_type in ['smirk', 'hindi', 'gun', 'sitting', 'quoge']
+    assert doge_type in ['help', 'smirk', 'hindi', 'gun', 'sitting', 'quoge']
 
     if doge_type == 'help':
         m = "Available doge commands:\ncrap doge sitting\ncrap doge smirk\ncrap doge hindi\ncrap doge quoge\ncrap doge gun"
