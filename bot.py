@@ -8,7 +8,7 @@ anime_base_url = os.environ['ANIME_BASE_URL']
 token = os.environ['BOT_TOKEN']
 cloudinary_base = os.environ["CLOUDINARY_BASE"]
 num_quotes = 1643
-mongo_url = os.environ["MONGO_URL"]
+mongo_url = str(os.environ["MONGO_URL"])
 
 client = discord.Client()
 
