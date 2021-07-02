@@ -9,6 +9,7 @@ token = os.environ['BOT_TOKEN']
 cloudinary_base = os.environ["CLOUDINARY_BASE"]
 num_quotes = 1643
 mongo_u = os.environ['MONGO_URL']
+mongo_client = pymongo.MongoClient(mongo_u)
 
 client = discord.Client()
 
@@ -41,7 +42,6 @@ def get_waifu():
 
 def get_quote():
     idx = random.randint(0, num_quotes)
-    mongo_client = pymongo.MongoClient(mongo_u)
     return "abc"
     db = mongo_client["crap_motivator"]
     collection = db["normal_quotes"]
