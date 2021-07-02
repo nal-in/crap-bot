@@ -14,6 +14,7 @@ client = discord.Client()
 
 def get_help():
     m = "You have summoned the crap bot.\n\tcrap waifu: get waifu pics\n\tcrap quote: get motivational quotes\n\tcrap doge help: get help with the crap doge commands"
+    return m
 
 def get_waifu():
     keywords = [
@@ -41,7 +42,7 @@ def get_waifu():
 def get_quote():
     idx = random.randint(0, num_quotes)
     mongo_client = pymongo.MongoClient(mongo_url)
-    db = client["crap_motivator"]
+    db = mongo_client["crap_motivator"]
     collection = db["normal_quotes"]
 
     res = collection.find_one({"idx": idx})
