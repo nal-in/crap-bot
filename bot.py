@@ -8,7 +8,7 @@ anime_base_url = os.environ['ANIME_BASE_URL']
 token = os.environ['BOT_TOKEN']
 cloudinary_base = os.environ["CLOUDINARY_BASE"]
 num_quotes = 1643
-mongo_url = str(os.environ["MONGO_URL"])
+mongo_u = os.environ['MONGO_URL']
 
 client = discord.Client()
 
@@ -41,8 +41,8 @@ def get_waifu():
 
 def get_quote():
     idx = random.randint(0, num_quotes)
-    mongo_client = pymongo.MongoClient(mongo_url)
-    return mongo_url
+    return mongo_u
+    mongo_client = pymongo.MongoClient(mongo_u)
     db = mongo_client["crap_motivator"]
     collection = db["normal_quotes"]
 
