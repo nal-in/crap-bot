@@ -41,7 +41,7 @@ def get_waifu():
 
 def get_quote():
     idx = random.randint(0, num_quotes)
-    mongo_client = pymongo.MongoClient(mongo_u, ssl=False)
+    mongo_client = pymongo.MongoClient(mongo_u)
     db = mongo_client["crap_motivator"]
     collection = db["normal_quotes"]
 
