@@ -7,7 +7,7 @@ import pymongo
 anime_base_url = os.environ['ANIME_BASE_URL']
 token = os.environ['BOT_TOKEN']
 cloudinary_base = os.environ["CLOUDINARY_BASE"]
-num_quotes = int(os.environ["NUM_QUOTES"])
+num_quotes = 1643
 mongo_url = os.environ["MONGO_URL"]
 
 client = discord.Client()
@@ -50,7 +50,7 @@ def get_quote():
 
 
 def get_doge(doge_type):
-    assert doge_type in ['help', 'smirk', 'hindi', 'gun', 'sitting', 'quoge']
+    assert doge_type in ['help', 'smirk', 'hindi', 'gun', 'sitting', 'quoge', 'wow', 'sad', 'swole', 'chinese']
 
     if doge_type == 'help':
         m = "Available doge commands:\n\tcrap doge sitting\n\tcrap doge smirk\n\tcrap doge hindi\n\tcrap doge quoge\n\tcrap doge gun\n\tcrap doge wow\n\tcrap doge sad\n\tcrap doge swole\n\tcrap doge chinese"
