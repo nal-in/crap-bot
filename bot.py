@@ -9,7 +9,7 @@ token = os.environ['BOT_TOKEN']
 cloudinary_base = os.environ["CLOUDINARY_BASE"]
 num_quotes = 1643
 mongo_u = os.environ['MONGO_URL']
-mongo_client = pymongo.MongoClient(mongo_u)
+mongo_client = pymongo.MongoClient(mongo_u, ssl=False)
 
 client = discord.Client()
 
