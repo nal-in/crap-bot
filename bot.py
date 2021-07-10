@@ -19,6 +19,14 @@ def get_help():
 def get_waifu():
     keywords = [
             'waifu',
+            'waifu',
+            'waifu',
+            'waifu',
+            'waifu',
+            'waifu',
+            'neko',
+            'neko',
+            'neko',
             'neko',
             'cuddle',
             'hug',
