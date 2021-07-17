@@ -5,6 +5,7 @@ import requests
 import pymongo
 
 anime_base_url = os.environ['ANIME_BASE_URL']
+anime_yuck_url = os.environ['ANIME_YUCK_URL']
 token = os.environ['BOT_TOKEN']
 cloudinary_base = os.environ["CLOUDINARY_BASE"]
 num_quotes = 1643
@@ -44,6 +45,11 @@ def get_waifu():
     ]
     keyword = keywords[random.randint(0, len(keywords))]
     url = os.path.join(anime_base_url, keyword)
+    res = requests.get(url)
+    return res.json()['url']
+
+def get_waifu_nsfw():
+    url = os.path.join(anime_yuck_url, "waifu")
     res = requests.get(url)
     return res.json()['url']
 
@@ -113,6 +119,10 @@ async def on_message(message):
 
     if msg == "crapwaifu":
         response = get_waifu()
+        await message.channel.send(response)
+
+    if msg == "crapwaifunsfw":
+        response = get_waifu_nsfw()
         await message.channel.send(response)
 
     if msg == "crapquote":
