@@ -64,10 +64,10 @@ def get_quote():
 
 
 def get_doge(doge_type):
-    assert doge_type in ['help', 'smirk', 'hindi', 'gun', 'sitting', 'quoge', 'wow', 'sad', 'swole', 'chinese']
+    assert doge_type in ['help', 'smirk', 'hindi', 'gun', 'sitting', 'quoge', 'wow', 'sad', 'swole', 'chinese', 'dancing']
 
     if doge_type == 'help':
-        m = "Available doge commands:\n\tcrap doge sitting\n\tcrap doge smirk\n\tcrap doge hindi\n\tcrap doge quoge\n\tcrap doge gun\n\tcrap doge wow\n\tcrap doge sad\n\tcrap doge swole\n\tcrap doge chinese"
+        m = "Available doge commands:\n\tcrap doge sitting\n\tcrap doge smirk\n\tcrap doge dancing\n\tcrap doge hindi\n\tcrap doge quoge\n\tcrap doge gun\n\tcrap doge wow\n\tcrap doge sad\n\tcrap doge swole\n\tcrap doge chinese"
         return m
     
     if doge_type == 'smirk':
@@ -106,7 +106,7 @@ def get_doge(doge_type):
         url = os.path.join(cloudinary_base, "v1625246909/doge_chinese.jpg")
         return url
     
-    if doge_type == "dancing":
+    if doge_type == 'dancing':
         url = os.path.join(cloudinary_base, "v1629090203/doge_dancing.gif")
         return url
 
