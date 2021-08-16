@@ -105,6 +105,10 @@ def get_doge(doge_type):
     if doge_type == 'chinese':
         url = os.path.join(cloudinary_base, "v1625246909/doge_chinese.jpg")
         return url
+    
+    if doge_type == "dancing":
+        url = os.path.join(cloudinary_base, "v1629090203/doge_dancing.gif")
+        return url
 
 @client.event
 async def on_message(message):
