@@ -64,10 +64,10 @@ def get_quote():
 
 
 def get_doge(doge_type):
-    assert doge_type in ['help', 'smirk', 'hindi', 'gun', 'sitting', 'quoge', 'wow', 'sad', 'swole', 'chinese', 'dancing']
+    assert doge_type in ['help', 'smirk', 'hindi', 'gun', 'sitting', 'quoge', 'wow', 'sad', 'swole', 'chinese', 'dancing', 'cry']
 
     if doge_type == 'help':
-        m = "Available doge commands:\n\tcrap doge sitting\n\tcrap doge smirk\n\tcrap doge dancing\n\tcrap doge hindi\n\tcrap doge quoge\n\tcrap doge gun\n\tcrap doge wow\n\tcrap doge sad\n\tcrap doge swole\n\tcrap doge chinese"
+        m = "Available doge commands:\n\tcrap doge sitting\n\tcrap doge smirk\n\tcrap doge dancing\n\tcrap doge hindi\n\tcrap doge quoge\n\tcrap doge gun\n\tcrap doge wow\n\tcrap doge sad\n\tcrap doge swole\n\tcrap doge chinese\n\tcrap doge cry"
         return m
     
     if doge_type == 'smirk':
@@ -108,6 +108,10 @@ def get_doge(doge_type):
     
     if doge_type == 'dancing':
         url = os.path.join(cloudinary_base, "v1629090203/doge_dancing.gif")
+        return url
+    
+    if doge_type == 'cry':
+        url = os.path.join(cloudinary_base, "v1630430142/doge_cry.png")
         return url
 
 @client.event
