@@ -1,17 +1,19 @@
 # CRAP-BOT
 
 ### A simple Discord bot made with discord<span></span>.py.
+<br>
 
-### Can
-
-- Send Doge pics<br><br>
+---
+- Sends Doge pics<br><br>
 ![Alt text](images/doge.png)
-<br><br><br>
+<br><br>
+---
 
-- Send motivational quotes<br><br>
+- Sends motivational quotes<br><br>
 ![Alt text](images/quote.png)
-<br><br><br>
+<br><br>
+---
 
-- Send waifu pics<br><br>
+- Sends waifu pics<br><br>
 ![Alt text](images/waifu.png)
 <br><br><br>
