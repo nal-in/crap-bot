@@ -128,6 +128,10 @@ async def on_message(message):
     if msg == "crapwaifu":
         response = get_waifu()
         await message.channel.send(response)
+    
+    if msg == "crapnsfw":
+        response = get_waifu_nsfw()
+        await message.channel.send(response)
 
     if msg == "crapquote":
         response = get_quote()
