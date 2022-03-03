@@ -64,7 +64,7 @@ def get_quote():
 
 
 def get_doge(doge_type):
-    assert doge_type in ['help', 'smirk', 'hindi', 'gun', 'sitting', 'quoge', 'wow', 'sad', 'swole', 'chinese', 'dancing', 'cry', 'sly']
+    assert doge_type in ['help', 'smirk', 'hindi', 'gun', 'sitting', 'quoge', 'wow', 'sad', 'swole', 'chinese', 'dancing', 'cry', 'sly', 'party']
 
     if doge_type == 'help':
         m = "Available doge commands:\n\tcrap doge sly\n\tcrap doge sitting\n\tcrap doge smirk\n\tcrap doge dancing\n\tcrap doge hindi\n\tcrap doge quoge\n\tcrap doge gun\n\tcrap doge wow\n\tcrap doge sad\n\tcrap doge swole\n\tcrap doge chinese\n\tcrap doge cry"
