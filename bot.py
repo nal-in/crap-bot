@@ -140,6 +140,10 @@ async def on_message(message):
     if msg == "crapquote":
         response = get_quote()
         await message.channel.send(response)
+    
+    if msg == "crapstare":
+        response = os.path.join(cloudinary_base, "v1646315977/stare.png")
+        await message.channel.send(response)
 
     if msg[0:8] == "crapdoge":
         doge_type = msg[8:]
